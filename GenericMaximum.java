@@ -2,20 +2,20 @@ package com.bridglab.corejava;
 
 public class GenericMaximum {
 	public static void main(String[] args) {
-		Float number1=10.90f, number2=20.70f, number3=10.79f;
-		int max = number1.compareTo(number2);
-		int max1 = number2.compareTo(number3);
-		if(max==1 && max1<=0) {
-			System.out.println(number1+ " is maximum number");
+		String name1="apple", name2="peach", name3="banana";
+		int max = name1.compareTo(name2);
+		int max1 = name2.compareTo(name3);
+		if(max>=1 && max1<=1) {
+			System.out.println(name1+ " has maximum string value");
 		}
 		else if (max==0 && max1==0) {
-			System.out.println(number1 +","+ number2+","+ number3+" are equal");
+			System.out.println(name1 +","+ name2+","+ name3+" are equal");
 		}
-		else if(max<1 && max1==1) {
-			System.out.println(number2 +" is maximum number");
+		else if(max<=1 && max1>=1) {
+			System.out.println(name2 +" has maximum string value");
 		}
 		else if(max<1 && max1<1)
-			System.out.println(number3 +" is maximum number");
+			System.out.println(name3 +" has maximum string value");
 			
 		
 	}	
