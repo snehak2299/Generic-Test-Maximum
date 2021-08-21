@@ -27,9 +27,12 @@ public class GenericMaximum<T extends Comparable<T>> {
 			max = name4;
 		}
 		
-		System.out.println(max);
+		//System.out.println(max);
+		print(name1 ,name2 ,name3,name4, max);
 		
-		
+	}
+	public static <T> void print(T name1, T name2, T name3,T name4, T max) { // UC5 added
+		System.out.println("Max value of "+name1+","+name2+","+name3+","+name4+" is : "+max);
 	}
 	
 	public static void main(String[] args) {
